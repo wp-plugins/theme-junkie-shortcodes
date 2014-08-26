@@ -3,7 +3,7 @@
  * Plugin Name:  Theme Junkie Shortcodes
  * Plugin URI:   http://www.theme-junkie.com/
  * Description:  A simple pack of shortcodes to enhance your site functionality.
- * Version:      0.1.0
+ * Version:      0.1.1
  * Author:       Theme Junkie
  * Author URI:   http://www.theme-junkie.com/
  * Author Email: satrya@theme-junkie.com

@@ -8,15 +8,13 @@
  * @copyright  Copyright (c) 2014, Theme Junkie & ThemeZilla
  * @license    http://www.gnu.org/licenses/gpl-2.0.html
  */
-
 function junkie_alert_shortcode( $atts, $content = null ) {
 
 	extract( shortcode_atts( array(
 		'style' => 'white'
     ), $atts ) );
 
-   return '<div class="junkie-alert ' . sanitize_html_class( $style ) . '">' . do_shortcode( wp_filter_post_kses( $content ) ) . '</div>';
+   return '<div class="junkie-alert ' . sanitize_html_class( $style ) . '">' . do_shortcode( stripslashes( $content ) ) . '</div>';
 
 }
-
 add_shortcode( 'junkie-alert', 'junkie_alert_shortcode' );

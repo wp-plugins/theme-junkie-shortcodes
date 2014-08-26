@@ -50,7 +50,7 @@ function junkie_tab_shortcode( $atts, $content = null ) {
 	$defaults = array( 'title' => __( 'Tab', 'junkie-shortcodes' ) );
 	extract( shortcode_atts( $defaults, $atts ) );
 
-	return '<div id="junkie-tab-'. sanitize_title( $title ) .'" class="junkie-tab">' . do_shortcode( wp_filter_post_kses( $content ) ) . '</div>';
+	return '<div id="junkie-tab-'. sanitize_title( $title ) .'" class="junkie-tab">' . do_shortcode( stripslashes( $content ) ) . '</div>';
 
 }
 

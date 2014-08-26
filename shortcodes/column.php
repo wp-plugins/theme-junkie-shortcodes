@@ -23,8 +23,7 @@ function junkie_column_shortcode( $atts, $content = null ) {
 		$last_div   = '<div class="clear"></div>';
 	}
 
-	return '<div class="junkie-' . sanitize_html_class( $column ) . sanitize_html_class( $last_class ) . '">' . do_shortcode( wp_filter_post_kses( $content ) ) . '</div>' . $last_div;
+	return '<div class="junkie-' . sanitize_html_class( $column ) . esc_attr( $last_class ) . '">' . do_shortcode( stripslashes( $content ) ) . '</div>' . $last_div;
 
 }
-
 add_shortcode( 'junkie-column', 'junkie_column_shortcode' );
