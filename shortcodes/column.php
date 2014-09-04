@@ -20,7 +20,7 @@ function junkie_column_shortcode( $atts, $content = null ) {
 	$last_div   = '';
 	if ( $last ) {
 		$last_class = ' junkie-column-last';
-		$last_div   = '<div class="clear"></div>';
+		$last_div   = '<div class="junkie-clearfix"></div>';
 	}
 
 	return '<div class="junkie-' . sanitize_html_class( $column ) . esc_attr( $last_class ) . '">' . do_shortcode( stripslashes( $content ) ) . '</div>' . $last_div;
