@@ -2,8 +2,8 @@
 Contributors: themejunkie, satrya
 Tags: shortcodes, alert, tab, toggle, button, column
 Requires at least: 3.6
-Tested up to: 3.9.2
-Stable tag: 0.1.1
+Tested up to: 4.0
+Stable tag: 0.1.2
 License: GPLv2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
 
@@ -45,7 +45,7 @@ This plugin adds a pack of shortcodes to enhance your site. You can easily to di
 
 == Frequently Asked Questions ==
 
-= Can I use this plugin without purchase Theme Junkie themes? =
+= Can I use this plugin without being Theme Junkie customer? =
 Yes, this plugin was developed to support all themes.
 
 = Is this your original work? =
@@ -56,6 +56,10 @@ Not really, the plugin is based on [ZillaShortcodes](http://www.themezilla.com/p
 1. Shortcode button
 
 == Changelog ==
+
+= 0.1.2 - 9/04/2014 =
+* Fixed: change class `clear` with `junkie-clearfix` issue
+* Tested for WordPress 4.0
 
 = 0.1.1 - 8/26/2014 =
 * Fixed: `last-column` class issue
