@@ -1,5 +1,5 @@
 === Theme Junkie Shortcodes ===
-Contributors: themejunkie, satrya
+Contributors: themejunkie
 Tags: shortcodes, alert, tab, toggle, button, column
 Requires at least: 3.6
 Tested up to: 4.0
